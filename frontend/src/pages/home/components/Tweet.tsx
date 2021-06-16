@@ -1,14 +1,20 @@
 import styled from "styled-components"
 
-const Tweet: React.VFC = () => {
+const StyledTweet: React.VFC = () => {
   return (
-    <div className="Tweet">
-      <Icon />
+    <Tweet>
+      <Icon src="" />
       <Name>Name</Name>
       <Text>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</Text>
-    </div>
+    </Tweet>
   )
 }
+const Tweet = styled.div`
+      height: 221px;
+      width: 697px;
+      background-color: #234256;
+      border: 0.1875rem solid #b4c8c0;
+      `
 
 const Text = styled.p`
       text-align: left;
@@ -18,6 +24,7 @@ const Text = styled.p`
       line-height: auto;
       color: #ffffff;
       `
+
 const Name = styled.div`
       text-align: left;
       vertical-align: top;
@@ -26,14 +33,10 @@ const Name = styled.div`
       line-height: auto;
       color: #ffffff;
       `
-const Icon = styled.div`
+
+const Icon = styled.img`
       height: 80px;
       width: 80px;
       `
 
-export default styled(Tweet)`
-      height: 221px;
-      width: 697px;
-      background-color: #234256;
-      border: 0.1875rem solid #b4c8c0;
-      `
+export default StyledTweet

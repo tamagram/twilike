@@ -1,17 +1,23 @@
 import React from 'react'
 import styled from 'styled-components'
 
-const Sidecontent: React.FC = () => {
+const StyledSidecontent: React.FC = () => {
   return (
-    <div>
+    <Sidecontent>
       sidecontent
-    </div>
+    </Sidecontent>
   )
 }
-
-export default styled(Sidecontent)`
-  height: 1024px;
+const Sidecontent = styled.div`
+  position: absolute;
   width: 540px;
-  background-color: #61807b;
-  border: 0.1875rem solid #b4c8c0;
+  height: 1024px;
+  left: 900px;
+  top: 0px;
+
+  background: #234256;
+  border: 3px solid #B4C8C0;
+  box-sizing: border-box;
 `
+
+export default StyledSidecontent
