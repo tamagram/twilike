@@ -1,26 +1,26 @@
 import React from 'react'
 import styled from 'styled-components'
 import StyledHeader from './Header'
-import Header from './Header'
-import Navbar from './Navbar'
-import Sidecontent from './Sidecontent'
-import StyledTimeline from './Timeline'
+import StyledNavbar from './Navbar'
+import StyledSide from './Side'
+import StyledTweet from './Tweet'
 
 const StyledHome: React.FC = () => {
   return (
     <Home>
       <StyledHeader />
-      <Navbar />
-      <StyledTimeline />
-      <Sidecontent />
+      <StyledNavbar />
+      <StyledTweet />
+      <StyledSide />
     </Home>
   )
 }
 
 const Home = styled.div`
-  height: 1024px;
-  width: 1440px;
-  background-color: #ffffff;
+  /* Home */
+  position: relative;
+
+  background: #FFFFFF;
 `
 
 export default StyledHome
