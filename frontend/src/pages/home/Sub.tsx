@@ -5,6 +5,7 @@ const StyledSide: React.VFC = () => {
     <Side>
       <Searchbox />
       <Content />
+      <Content />
     </Side>
   )
 }
@@ -13,7 +14,8 @@ const Side = styled.div`
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding: 2rem 3.5625rem;
+  justify-content: flex-start;
+  padding: 4.5rem 3.5625rem;
   gap: 3.25rem;
   border-left: 1px solid #c4c4c4;
   position: fixed;
@@ -22,14 +24,14 @@ const Side = styled.div`
   `
 const Searchbox = styled.div`
   border-radius: 0.625rem;
-  height: 58px;
-  width: 330px;
+  min-height: 58px;
+  min-width: 330px;
   background-color: #c4c4c4;
 `
 const Content = styled.div`
   border-radius: 0.625rem;
-  height: 630px;
-  width: 330px;
+  min-height: 631px;
+  min-width: 330px;
   background-color: #c4c4c4;
 `
 

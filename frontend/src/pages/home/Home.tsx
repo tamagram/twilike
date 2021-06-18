@@ -15,6 +15,8 @@ const StyledHome: React.FC = () => {
 }
 
 const Home = styled.div`
+  display: flex;
+  flex-direction: row;
   left: calc(50% - 1440px/2); // 中心拡大が可能になる
   position: absolute;
 `
