@@ -1,12 +1,13 @@
 import styled from "styled-components"
+import StyledForm from "./form/Form"
+import Form from "./form/Form"
 
 const StyledHeader: React.VFC = () => {
   return (
     <Header>
       <Title>HOME</Title>
       <Vector />
-      <Sub>
-      </Sub>
+      <StyledForm />
     </Header>
   )
 }
